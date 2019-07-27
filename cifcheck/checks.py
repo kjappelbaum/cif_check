@@ -3,10 +3,14 @@
 __copyright__ = 'MIT License'
 __status__ = 'First Draft, Testing'
 
-import jax.numpy as np
+import numpy as np
 from cifcheck import utils
+import warnings
+warnings.filterwarnings("ignore", message="scaled_positions")
 
-def check_clashing(coord_matrix: np.array, threshold: float = 0.3, method="pdist") -> bool:
+def check_clashing(coord_matrix: np.array,
+                   threshold: float = 0.2,
+                   method="pdist") -> bool:
     """
     Takes positions of atoms checks if there are atoms that are too close (i.e. their distance
     is smaller than the threshold).
@@ -21,9 +25,24 @@ def check_clashing(coord_matrix: np.array, threshold: float = 0.3, method="pdist
         bool
     """
 
-    duplicates = utils._get_duplicates_ktree(coord_matrix, threshold)
+    if method == "kdtree":
+        duplicates = utils._get_duplicates_ktree(coord_matrix, threshold)
+    else:
+        duplicates = utils._get_duplicates_pdist(coord_matrix, threshold)
 
     if len(duplicates) > 1:
         return True
     else:
         return False
+
+
+def check_any_hydrogen():
+    raise NotImplementedError
+
+
+def check_undercoordinated():
+    raise NotImplementedError
+
+
+def check_solvent():
+    raise NotImplementedError

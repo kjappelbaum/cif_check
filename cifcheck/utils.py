@@ -3,21 +3,22 @@
 __copyright__ = 'MIT License'
 __status__ = 'First Draft, Testing'
 
-import jax.numpy as np
-from jax import grad, jit, vmap
+import numpy as np
+from numba import jit  # jax is not ready enough
 from scipy.spatial import cKDTree
 from pymatgen import Structure
 
 from scipy.spatial.distance import pdist
 
+
 def _ase_to_coord_matrix(atoms):
     return atoms.get_positions()
+
 
 def _pymatgen_to_coord_matrix(structure: Structure):
     return structure.cart_coords
 
 
-@jit
 def _get_duplicates_list(groups):
     """
     Args:
@@ -43,7 +44,9 @@ def _get_duplicates_list(groups):
 
     return duplicates
 
-def _get_duplicates_ktree(coord_matrix: np.array, threshold: float = 0.2) -> list:
+
+def _get_duplicates_ktree(coord_matrix: np.array,
+                          threshold: float = 0.2) -> list:
     """
 
     Args:
@@ -60,7 +63,9 @@ def _get_duplicates_ktree(coord_matrix: np.array, threshold: float = 0.2) -> lis
 
     return duplicates
 
-def _get_duplicates_pdist(coord_matrix: np.array, threshold: float = 0.2) -> list:
+
+def _get_duplicates_pdist(coord_matrix: np.array,
+                          threshold: float = 0.2) -> list:
     """
 
     Args:
@@ -69,8 +74,7 @@ def _get_duplicates_pdist(coord_matrix: np.array, threshold: float = 0.2) -> lis
     Returns:
         list of duplicates
     """
-    dists = pdist(coord_matrix, 'sqeuclidean')
-    dup = np.nonzero(dists < threshold ** 2)
+    dists = pdist(coord_matrix, 'euclidean')
+    dup = np.where(dists < threshold)
 
-    return list(dup)
-
+    return dup[0].tolist()

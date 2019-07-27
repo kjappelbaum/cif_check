@@ -7,7 +7,7 @@ setup(
     url='',
     license='MIT',
     install_requires=[
-        'jax', 'pymatgen', 'ase',  'scipy>=1.3.0rc1'
+        'numba', 'pymatgen', 'pycodcif', 'ase',  'scipy>=1.3.0rc1'
     ],
     extras_require={
         'testing': ['pytest', 'pytest-cov<2.6'],
@@ -21,8 +21,6 @@ setup(
     author_email='kevin.jablonka@epfl.ch',
     classifiers=[
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Development Status :: 1 - Beta",
         "Intended Audience :: Science/Research",
