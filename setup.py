@@ -7,7 +7,7 @@ setup(
     url='',
     license='MIT',
     install_requires=[
-        'numpy>=1.14.3', 'pymatgen', 'ase', 'tqdm', 'pandas', 'scipy>=1.3.0rc1'
+        'jax', 'pymatgen', 'ase',  'scipy>=1.3.0rc1'
     ],
     extras_require={
         'testing': ['pytest', 'pytest-cov<2.6'],
@@ -34,4 +34,4 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules"
     ],
     description=
-    'small, efficient package to clean and analyze structural databases')
+    'small tool to check crystal structures')

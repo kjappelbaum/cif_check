@@ -8,6 +8,8 @@ from jax import grad, jit, vmap
 from scipy.spatial import cKDTree
 from pymatgen import Structure
 
+from scipy.spatial.distance import pdist
+
 def _ase_to_coord_matrix(atoms):
     return atoms.get_positions()
 
@@ -57,4 +59,18 @@ def _get_duplicates_ktree(coord_matrix: np.array, threshold: float = 0.2) -> lis
     duplicates = _get_duplicates_list(groups)
 
     return duplicates
+
+def _get_duplicates_pdist(coord_matrix: np.array, threshold: float = 0.2) -> list:
+    """
+
+    Args:
+        coord_matrix (np.array): 3 * N array of position of atoms
+
+    Returns:
+        list of duplicates
+    """
+    dists = pdist(coord_matrix, 'sqeuclidean')
+    dup = np.nonzero(dists < threshold ** 2)
+
+    return list(dup)
 

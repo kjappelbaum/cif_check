@@ -6,7 +6,7 @@ __status__ = 'First Draft, Testing'
 import jax.numpy as np
 from cifcheck import utils
 
-def check_clashing(coord_matrix: np.array, threshold: float = 0.3) -> bool:
+def check_clashing(coord_matrix: np.array, threshold: float = 0.3, method="pdist") -> bool:
     """
     Takes positions of atoms checks if there are atoms that are too close (i.e. their distance
     is smaller than the threshold).
@@ -14,6 +14,8 @@ def check_clashing(coord_matrix: np.array, threshold: float = 0.3) -> bool:
     Args:
         coord_matrix (np.array): 3 * N array of position of atoms
         threshold (float): used as a check for clashing atoms
+        method (sting): kdtree or pdist (pdist is default). Using either a more efficient cKDTree datastructure
+            for querying duplicates or the pdist distance matrix implementation
 
     Returns:
         bool
