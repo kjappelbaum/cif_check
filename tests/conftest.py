@@ -5,6 +5,7 @@ __status__ = 'First Draft, Testing'
 
 import pytest
 import os
+from pymatgen import Structure
 from ase.io import read
 from glob import glob
 from cifcheck import utils
@@ -17,12 +18,20 @@ def get_good_paths():
     return glob(os.path.join(THIS_DIR, "correct_structures", "*.cif"))
 
 
-def _paths_to_array_list(paths):
+def _paths_to_array_list(paths, mode="ase"):
     arrays = []
 
-    for p in paths:
-        atoms = read(p, reader='pycodcif')
-        arrays.append(utils._ase_to_coord_matrix(atoms))
+    if mode == "ase":
+        for p in paths:
+            atoms = read(p, reader='pycodcif')
+            arrays.append(utils._ase_to_coord_matrix(atoms))
+
+    else:
+        for p in paths:
+            print(p)
+            atoms = Structure.from_file(p,  )
+            arrays.append(utils._pymatgen_to_coord_matrix(atoms))
+
 
     return arrays
 

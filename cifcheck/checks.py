@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings("ignore", message="scaled_positions")
 
 def check_clashing(coord_matrix: np.array,
-                   threshold: float = 0.2,
+                   threshold: float = 0.6,
                    method="pdist") -> bool:
     """
     Takes positions of atoms checks if there are atoms that are too close (i.e. their distance
