@@ -23,13 +23,12 @@ def _paths_to_array_list(paths, mode="ase"):
 
     if mode == "ase":
         for p in paths:
-            atoms = read(p, reader='pycodcif')
+            atoms = read(p)
             arrays.append(utils._ase_to_coord_matrix(atoms))
 
     else:
         for p in paths:
-            print(p)
-            atoms = Structure.from_file(p,  )
+            atoms = Structure.from_file(p)
             arrays.append(utils._pymatgen_to_coord_matrix(atoms))
 
 
