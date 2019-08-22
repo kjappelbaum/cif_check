@@ -5,20 +5,19 @@ __status__ = 'First Draft, Testing'
 
 from cifcheck.checks import check_clashing
 
+
 def test_check_clashing(get_clashing_arrays, get_good_arrays):
     bad = get_clashing_arrays
     good = get_good_arrays
 
     for a in bad:
-        assert check_clashing(a, method="pdist")
+        assert check_clashing(a, method='pdist')
 
     for a in good:
-        assert not check_clashing(a, method="pdist")
+        assert not check_clashing(a, method='pdist')
 
     for a in bad:
-        assert check_clashing(a, method="kdtree")
+        assert check_clashing(a, method='kdtree')
 
     for a in good:
-        assert not check_clashing(a, method="kdtree")
-
-
+        assert not check_clashing(a, method='kdtree')

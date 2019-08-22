@@ -1,16 +1,16 @@
-####################################################################### 
-# 
-# This file contains crystal structure data downloaded from the 
-# Cambridge Structural Database (CSD) hosted by the Cambridge 
+#######################################################################
+#
+# This file contains crystal structure data downloaded from the
+# Cambridge Structural Database (CSD) hosted by the Cambridge
 # Crystallographic Data Centre (CCDC).
-# 
-# Full information about CCDC data access policies and citation 
-# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
-# 
-# Audit and citation data items may have been added by the CCDC. 
-# Please retain this information to preserve the provenance of 
-# this file and to allow appropriate attribution of the data. 
-# 
+#
+# Full information about CCDC data access policies and citation
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1
+#
+# Audit and citation data items may have been added by the CCDC.
+# Please retain this information to preserve the provenance of
+# this file and to allow appropriate attribution of the data.
+#
 #######################################################################
 
 data_cmma-sr
@@ -21,15 +21,15 @@ _citation_id
 _citation_doi
 _citation_year
 1 10.1039/C3CE41121D 2013
-_audit_update_record             
+_audit_update_record
 ;
 2013-08-16 deposited with the CCDC.	2019-06-13 downloaded from the CCDC.
 ;
 
 _audit_creation_method           SHELXL-97
-_chemical_name_systematic        
-; 
- ? 
+_chemical_name_systematic
+;
+ ?
 ;
 _chemical_name_common            ?
 _chemical_melting_point          ?
@@ -98,9 +98,9 @@ _exptl_absorpt_correction_T_min  0.9421
 _exptl_absorpt_correction_T_max  0.9880
 _exptl_absorpt_process_details   XDS
 
-_exptl_special_details           
-; 
- ? 
+_exptl_special_details
+;
+ ?
 ;
 
 _diffrn_ambient_temperature      296(2)
@@ -136,21 +136,21 @@ _computing_molecular_graphics    'Diamond 3.1'
 _computing_publication_material  WinGX
 
 
-_refine_special_details          
-; 
- Refinement of F^2^ against ALL reflections.  The weighted R-factor wR and 
- goodness of fit S are based on F^2^, conventional R-factors R are based 
- on F, with F set to zero for negative F^2^. The threshold expression of 
- F^2^ > 2sigma(F^2^) is used only for calculating R-factors(gt) etc. and is 
- not relevant to the choice of reflections for refinement.  R-factors based 
- on F^2^ are statistically about twice as large as those based on F, and R- 
- factors based on ALL data will be even larger. 
+_refine_special_details
+;
+ Refinement of F^2^ against ALL reflections.  The weighted R-factor wR and
+ goodness of fit S are based on F^2^, conventional R-factors R are based
+ on F, with F set to zero for negative F^2^. The threshold expression of
+ F^2^ > 2sigma(F^2^) is used only for calculating R-factors(gt) etc. and is
+ not relevant to the choice of reflections for refinement.  R-factors based
+ on F^2^ are statistically about twice as large as those based on F, and R-
+ factors based on ALL data will be even larger.
 ;
 
 _refine_ls_structure_factor_coef Fsqd
 _refine_ls_matrix_type           full
 _refine_ls_weighting_scheme      calc
-_refine_ls_weighting_details     
+_refine_ls_weighting_details
 'calc w=1/[\s^2^(Fo^2^)+(0.1000P)^2^+0.0000P] where P=(Fo^2^+2Fc^2^)/3'
 _atom_sites_solution_primary     direct
 _atom_sites_solution_secondary   difmap
@@ -273,14 +273,14 @@ Zr3B 0.0058(11) 0.0265(16) 0.0405(10) 0.000 -0.0006(5) 0.000
 Zr1A 0.0095(11) 0.028(2) 0.0455(11) -0.006(2) 0.000 0.000
 Zr1B 0.013(4) 0.033(4) 0.034(4) -0.017(5) 0.000 0.000
 
-_geom_special_details            
-; 
- All esds (except the esd in the dihedral angle between two l.s. planes) 
- are estimated using the full covariance matrix.  The cell esds are taken 
- into account individually in the estimation of esds in distances, angles 
- and torsion angles; correlations between esds in cell parameters are only 
- used when they are defined by crystal symmetry.  An approximate (isotropic) 
- treatment of cell esds is used for estimating esds involving l.s. planes. 
+_geom_special_details
+;
+ All esds (except the esd in the dihedral angle between two l.s. planes)
+ are estimated using the full covariance matrix.  The cell esds are taken
+ into account individually in the estimation of esds in distances, angles
+ and torsion angles; correlations between esds in cell parameters are only
+ used when they are defined by crystal symmetry.  An approximate (isotropic)
+ treatment of cell esds is used for estimating esds involving l.s. planes.
 ;
 
 loop_
@@ -556,6 +556,6 @@ _platon_squeeze_void_volume
 _platon_squeeze_void_count_electrons
 _platon_squeeze_void_content
 1 0.015 0.005 -0.031 5177 1774 ' '
-_platon_squeeze_details          
+_platon_squeeze_details
 ;
 ;

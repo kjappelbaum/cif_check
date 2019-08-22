@@ -1,16 +1,16 @@
-####################################################################### 
-# 
-# This file contains crystal structure data downloaded from the 
-# Cambridge Structural Database (CSD) hosted by the Cambridge 
+#######################################################################
+#
+# This file contains crystal structure data downloaded from the
+# Cambridge Structural Database (CSD) hosted by the Cambridge
 # Crystallographic Data Centre (CCDC).
-# 
-# Full information about CCDC data access policies and citation 
-# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
-# 
-# Audit and citation data items may have been added by the CCDC. 
-# Please retain this information to preserve the provenance of 
-# this file and to allow appropriate attribution of the data. 
-# 
+#
+# Full information about CCDC data access policies and citation
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1
+#
+# Audit and citation data items may have been added by the CCDC.
+# Please retain this information to preserve the provenance of
+# this file and to allow appropriate attribution of the data.
+#
 #######################################################################
 
 data_NO2-DMOF
@@ -21,12 +21,12 @@ _citation_id
 _citation_doi
 _citation_year
 1 10.1039/C4SC00497C 2014
-_audit_update_record             
+_audit_update_record
 ;
 2014-03-18 deposited with the CCDC.	2019-04-06 downloaded from the CCDC.
 ;
 _audit_creation_date             2013-08-05
-_audit_creation_method           
+_audit_creation_method
 ;
   Olex2 1.2
   (compiled Apr 23 2013 17:54:37, GUI svn.r4466)
@@ -82,7 +82,7 @@ _exptl_absorpt_coefficient_mu    1.660
 _exptl_absorpt_correction_T_max  1.00000
 _exptl_absorpt_correction_T_min  0.90061
 _exptl_absorpt_correction_type   multi-scan
-_exptl_absorpt_process_details   
+_exptl_absorpt_process_details
 ;
 CrysAlisPro, Agilent Technologies,
 Version 1.171.36.28 (release 01-02-2013 CrysAlis171 .NET)
@@ -101,9 +101,9 @@ _exptl_crystal_F_000             668
 _exptl_crystal_size_max          0.17
 _exptl_crystal_size_mid          0.16
 _exptl_crystal_size_min          0.15
-_exptl_special_details           
+_exptl_special_details
 ;
- ? 
+ ?
 ;
 _diffrn_reflns_av_R_equivalents  0.0362
 _diffrn_reflns_av_unetI/netI     0.0280
@@ -121,7 +121,7 @@ _diffrn_ambient_temperature      270.0
 _diffrn_detector_area_resol_mean 16.1183
 _diffrn_measured_fraction_theta_full 0.9948
 _diffrn_measured_fraction_theta_max 0.9948
-_diffrn_measurement_details      
+_diffrn_measurement_details
 ;
 #__ type_ start__ end____ width___ exp.time_
   1 omega  -68.00  -38.00   1.0000    1.0000
@@ -258,42 +258,42 @@ _reflns_odcompleteness_completeness 86.41
 _reflns_odcompleteness_iscentric 1
 _reflns_odcompleteness_theta     80.95
 _reflns_threshold_expression     >2sigma(I)
-_computing_cell_refinement       
+_computing_cell_refinement
 ;
 CrysAlisPro, Agilent Technologies,
 Version 1.171.36.28 (release 01-02-2013 CrysAlis171 .NET)
 (compiled Feb  1 2013,16:14:44)
 ;
-_computing_data_collection       
+_computing_data_collection
 ;
 CrysAlisPro, Agilent Technologies,
 Version 1.171.36.28 (release 01-02-2013 CrysAlis171 .NET)
 (compiled Feb  1 2013,16:14:44)
 ;
-_computing_data_reduction        
+_computing_data_reduction
 ;
 CrysAlisPro, Agilent Technologies,
 Version 1.171.36.28 (release 01-02-2013 CrysAlis171 .NET)
 (compiled Feb  1 2013,16:14:44)
 ;
-_computing_molecular_graphics    
+_computing_molecular_graphics
 ;
 O. V. Dolomanov, L. J. Bourhis, R. J. Gildea, J. A. K. Howard and H. Puschmann,
 OLEX2: a complete structure solution, refinement and analysis program.
 J. Appl. Cryst. (2009). 42, 339-341.
 ;
-_computing_publication_material  
+_computing_publication_material
 ;
 O. V. Dolomanov, L. J. Bourhis, R. J. Gildea, J. A. K. Howard and H. Puschmann,
 OLEX2: a complete structure solution, refinement and analysis program.
 J. Appl. Cryst. (2009). 42, 339-341.
 ;
-_computing_structure_refinement  
+_computing_structure_refinement
 ;
 XL, G.M. Sheldrick, Acta Cryst.
 (2008). A64, 112-122
 ;
-_computing_structure_solution    
+_computing_structure_solution
 ;
 XS, G.M. Sheldrick, Acta Cryst.
 (2008). A64, 112-122
@@ -315,22 +315,22 @@ _refine_ls_restrained_S_all      1.173
 _refine_ls_shift/su_max          0.000
 _refine_ls_shift/su_mean         0.000
 _refine_ls_structure_factor_coef Fsqd
-_refine_ls_weighting_details     
+_refine_ls_weighting_details
 'calc w=1/[\s^2^(Fo^2^)+(0.1211P)^2^+1.7605P] where P=(Fo^2^+2Fc^2^)/3'
 _refine_ls_weighting_scheme      calc
 _refine_ls_wR_factor_gt          0.2025
 _refine_ls_wR_factor_ref         0.2116
-_refine_special_details          
+_refine_special_details
 ;
- Refinement of F^2^ against ALL reflections.  The weighted R-factor wR and 
- goodness of fit S are based on F^2^, conventional R-factors R are based 
- on F, with F set to zero for negative F^2^. The threshold expression of 
- F^2^ > 2sigma(F^2^) is used only for calculating R-factors(gt) etc. and is 
- not relevant to the choice of reflections for refinement.  R-factors based 
- on F^2^ are statistically about twice as large as those based on F, and R- 
- factors based on ALL data will be even larger. 
+ Refinement of F^2^ against ALL reflections.  The weighted R-factor wR and
+ goodness of fit S are based on F^2^, conventional R-factors R are based
+ on F, with F set to zero for negative F^2^. The threshold expression of
+ F^2^ > 2sigma(F^2^) is used only for calculating R-factors(gt) etc. and is
+ not relevant to the choice of reflections for refinement.  R-factors based
+ on F^2^ are statistically about twice as large as those based on F, and R-
+ factors based on ALL data will be even larger.
 ;
-_olex2_refinement_description    
+_olex2_refinement_description
 ;
 1. Fixed Uiso
  At 1.2 times of:
@@ -423,14 +423,14 @@ C5 0.049(7) 0.048(6) 0.016(5) 0.003(5) -0.001(5) -0.027(6)
 C9 0.069(8) 0.034(5) 0.025(6) 0.001(5) -0.008(6) 0.003(6)
 C6 0.047(7) 0.062(7) 0.031(6) 0.001(6) -0.006(5) -0.011(7)
 
-_geom_special_details            
+_geom_special_details
 ;
- All esds (except the esd in the dihedral angle between two l.s. planes) 
- are estimated using the full covariance matrix.  The cell esds are taken 
- into account individually in the estimation of esds in distances, angles 
- and torsion angles; correlations between esds in cell parameters are only 
- used when they are defined by crystal symmetry.  An approximate (isotropic) 
- treatment of cell esds is used for estimating esds involving l.s. planes. 
+ All esds (except the esd in the dihedral angle between two l.s. planes)
+ are estimated using the full covariance matrix.  The cell esds are taken
+ into account individually in the estimation of esds in distances, angles
+ and torsion angles; correlations between esds in cell parameters are only
+ used when they are defined by crystal symmetry.  An approximate (isotropic)
+ treatment of cell esds is used for estimating esds involving l.s. planes.
 ;
 loop_
 _geom_bond_atom_site_label_1
@@ -570,7 +570,7 @@ O4 N2 C3 112.6(14) . . ?
 O3 N2 C3 117.3(16) . . ?
 O3 N2 O4 127.2(13) . . ?
 
-_platon_squeeze_details          
+_platon_squeeze_details
 ;
 ;
 loop_
@@ -583,4 +583,3 @@ _platon_squeeze_void_count_electrons
 _platon_squeeze_void_content
 1 0.250 0.250 -0.023 547 90 N,N-dimethylformamide
 2 0.750 0.750 -0.009 547 90 N,N-dimethylformamide
-

@@ -6,11 +6,12 @@ __status__ = 'First Draft, Testing'
 import numpy as np
 from cifcheck import utils
 import warnings
-warnings.filterwarnings("ignore", message="scaled_positions")
+warnings.filterwarnings('ignore', message='scaled_positions')
+
 
 def check_clashing(coord_matrix: np.array,
                    threshold: float = 0.6,
-                   method="pdist") -> bool:
+                   method='pdist') -> bool:
     """
     Takes positions of atoms checks if there are atoms that are too close (i.e. their distance
     is smaller than the threshold).
@@ -25,15 +26,12 @@ def check_clashing(coord_matrix: np.array,
         bool
     """
 
-    if method == "kdtree":
-        duplicates = utils._get_duplicates_ktree(coord_matrix, threshold)
+    if method == 'kdtree':
+        duplicates = utils._get_duplicates_ktree(coord_matrix, threshold)  # pylint:disable=protected-access
     else:
-        duplicates = utils._get_duplicates_pdist(coord_matrix, threshold)
+        duplicates = utils._get_duplicates_pdist(coord_matrix, threshold)  # pylint:disable=protected-access
 
-    if len(duplicates) > 1:
-        return True
-    else:
-        return False
+    return bool(len(duplicates) > 1)
 
 
 def check_any_hydrogen():

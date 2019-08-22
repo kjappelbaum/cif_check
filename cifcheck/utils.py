@@ -4,7 +4,6 @@ __copyright__ = 'MIT License'
 __status__ = 'First Draft, Testing'
 
 import numpy as np
-from numba import jit  # jax is not ready enough
 from scipy.spatial import cKDTree
 from pymatgen import Structure
 
