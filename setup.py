@@ -7,9 +7,7 @@ setup(
     packages=['cifcheck'],
     url='',
     license='MIT',
-    install_requires=[
-        'numba', 'pymatgen', 'pycodcif', 'ase', 'scipy>=1.3.0rc1'
-    ],
+    install_requires=['pymatgen', 'ase', 'scipy>=1.3.0rc1'],
     extras_require={
         'testing': ['pytest', 'pytest-cov<2.6'],
         'docs': ['sphinx-rtd-theme', 'sphinxcontrib-bibtex'],
